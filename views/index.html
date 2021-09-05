@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DMS Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="container">
+          <div class="text-center">
+            <a href="/" class="nav-brand text-dark">Data Management System</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <a href="/add-story" class="border-shadow">
+            <span class="text-gradient">
+              New Story
+              <i class="fas fa-book"></i>
+            </span>
+          </a>
+        </div>
+        <form action="/" method="POST">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Name</th>
+                <th>Condition</th>
+                <th>Date Added</th>
+                <th>Content</th>
+                <th>External Link</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Asarel Castellanos</td>
+                <td>Happiness</td>
+                <td>03-21-01</td>
+                <td>Asarel is so happy.</td>
+                <td>www.asarelcastellanos.com</td>
+                <td>
+                  <a href="#" class="btn border-shadow update">
+                    <span class="text-gradient">
+                      <i class="fas fa-pencil-alt"></i>
+                    </span>
+                  </a>
+                  <a class="btn border-shadow delete">
+                    <span class="text-gradient">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

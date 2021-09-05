@@ -1,0 +1,37 @@
+<!-- include header -->
+<%- include('include/_header') %>
+
+<main id="site-main">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <a href="/add-story" class="border-shadow">
+          <span class="text-gradient">
+            New Story
+            <i class="fas fa-book"></i>
+          </span>
+        </a>
+      </div>
+      <form action="/" method="POST">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Condition</th>
+              <th>Date Added</th>
+              <th>Content</th>
+              <th>External Link</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- include _show -->
+              <%- include('include/_show') %>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
